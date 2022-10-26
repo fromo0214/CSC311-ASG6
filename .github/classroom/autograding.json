@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Build Test",
+      "setup": "ant clean",
+      "run": "ant build",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 50
+    },
+    {
+      "name": "TermCounterTest",
+      "setup": "ant build",
+      "run": "ant TermCounterTest",
+      "input": "",
+      "output": "[junit] Tests run: 1, Failures: 0, Errors: 0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "IndexTest",
+      "setup": "ant build",
+      "run": "ant IndexTest",
+      "input": "",
+      "output": "[junit] Tests run: 1, Failures: 0, Errors: 0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
